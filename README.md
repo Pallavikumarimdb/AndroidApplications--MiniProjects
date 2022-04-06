@@ -1,1 +1,1 @@
-# SmallAndroidApplications--MiniProjects
+# AndroidApplications--MiniProjects
