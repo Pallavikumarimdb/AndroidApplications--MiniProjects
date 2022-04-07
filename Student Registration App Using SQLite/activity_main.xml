@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:layout_marginBottom="61dp"
+        android:layout_x="50dp"
+        android:layout_y="20dp"
+        android:text="Student Details"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="145dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="55dp"
+        android:layout_x="20dp"
+        android:layout_y="110dp"
+        android:text="Enter Rollno:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/Rollno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/Rollno"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="23dp"
+        android:layout_x="175dp"
+        android:layout_y="100dp"
+        android:hint="Enter roll no"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="127dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="55dp"
+        android:layout_x="20dp"
+        android:layout_y="160dp"
+        android:text="Enter Name:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="26dp"
+        android:layout_x="175dp"
+        android:layout_y="150dp"
+        android:hint="Enter name"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Marks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/Rollno" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="141dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="33sp"
+        android:layout_marginBottom="124dp"
+        android:layout_x="20dp"
+        android:layout_y="210dp"
+        android:text="Enter Marks:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Update"
+        app:layout_constraintEnd_toStartOf="@+id/Marks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/Marks"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="99dp"
+        android:layout_x="175dp"
+        android:layout_y="200dp"
+        android:hint="Marks out of 100"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Insert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/Name" />
+
+    <Button
+        android:id="@+id/Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="35dp"
+        android:layout_x="25dp"
+        android:layout_y="400dp"
+        android:text="Update"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/View"
+        app:layout_constraintEnd_toStartOf="@+id/Insert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="41dp"
+        android:layout_x="200dp"
+        android:layout_y="400dp"
+        android:text="View"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/ViewAll"
+        app:layout_constraintEnd_toStartOf="@+id/Delete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Update" />
+
+    <Button
+        android:id="@+id/Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="187dp"
+        android:layout_x="211dp"
+        android:layout_y="251dp"
+        android:text="Delete"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/View"
+        app:layout_constraintTop_toBottomOf="@+id/Insert" />
+
+    <Button
+        android:id="@+id/Insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="35dp"
+        android:layout_x="18dp"
+        android:layout_y="248dp"
+        android:text="Insert"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/Delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Update"
+        app:layout_constraintTop_toBottomOf="@+id/Marks" />
+
+    <Button
+        android:id="@+id/ViewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="83dp"
+        android:layout_x="98dp"
+        android:layout_y="325dp"
+        android:text="View All"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/View" />
+</androidx.constraintlayout.widget.ConstraintLayout>
